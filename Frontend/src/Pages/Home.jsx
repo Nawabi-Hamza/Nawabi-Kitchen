@@ -34,7 +34,7 @@ export default function Home() {
 
     fetchPost();
     fetchSavedPost();
-  }, [])
+  }, [userId])
 
     const savePost = async(postId)=>{
       try{
