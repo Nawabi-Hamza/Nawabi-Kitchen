@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <div><nav className="navbar  navbar-expand-md navbar-light bg-light">
           <div className="container">
-            <img src="https://th.bing.com/th/id/OIP.wWR6MmWMazbtlRKqdxCU0AHaIe?w=152&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7" alt="" style={{height:"40px" , width:"40px"}} />
+            <img src="https://th.bing.com/th/id/OIP.wWR6MmWMazbtlRKqdxCU0AHaIe?w=152&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7" alt="" style={{height:"60px" , width:"50px"}} />
             <button className="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
