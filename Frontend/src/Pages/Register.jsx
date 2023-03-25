@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import axios from "axios"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export default function RegisterPage() {
   return (
@@ -16,6 +16,7 @@ const Register = ()=>{
     const [ phone1,setPhone ] = useState("")
     const [ age1,setAge ] = useState("")
     const [ password1,setPassword ] = useState("")
+    const navigate = useNavigate()
     const handleRegister = async(e)=>{
       e.preventDefault();
       if(username1===""||email1===""||phone1===""||age1===""||password1===""){
@@ -31,6 +32,7 @@ const Register = ()=>{
           })
           document.getElementById("show").innerHTML=res.data.message;
           document.getElementById("show").style="display:block;";
+          navigate("/auth")
           setTimeout(()=>{
             document.getElementById("show").innerHTML="";
             document.getElementById("show").style="display:none;";

@@ -5,7 +5,7 @@ import { Link, Outlet,useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
     const [ cookies , setCookies ] = useCookies(["access_token"])
-    const navigate = useNavigate()
+    const navigate = useNavigate()                     
     const handleLogout = (e)=>{
         e.preventDefault();
         setCookies("access_token","")
